@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Source+Sans+Pro&display=swap" rel="stylesheet">
   <!-- Font Awsome -->
   <link rel="stylesheet" href="./css/font-awsome/css/font-awesome.min.css">
+  <!-- Animated CSS Style -->
+  <link rel="stylesheet" href="./css/animation/animate.min.css">
   <!-- BootStrap CSS -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <!-- Own Style CSS -->
@@ -20,44 +22,49 @@
 <body>
 
   <!-- Header -->
+  <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Harry <span style="color: #5ab15a">Hu</span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="home"
-            aria-selected="true">Profile</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="resume-tab" data-toggle="tab" href="#resume" role="tab" aria-controls="profile"
-            aria-selected="false">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="services-tab" data-toggle="tab" href="#services" role="tab" aria-controls="services"
-            aria-selected="false">Services</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="blog-tab" data-toggle="tab" href="#blog" role="tab" aria-controls="blog"
-              aria-selected="false">Blog</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
-              aria-selected="false">Contact</a>
+ 
+      <a class="navbar-brand" href="#">Harry <span style="color: #5ab15a">Hu</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="home"
+              aria-selected="true">Profile</a>
           </li>
-      </ul>
-    </div>
-  </nav>
+          <li class="nav-item">
+            <a class="nav-link" id="resume-tab" data-toggle="tab" href="#resume" role="tab" aria-controls="profile"
+              aria-selected="false">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="services-tab" data-toggle="tab" href="#services" role="tab" aria-controls="services"
+              aria-selected="false">Services</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="blog-tab" data-toggle="tab" href="#blog" role="tab" aria-controls="blog"
+                aria-selected="false">Blog</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+                aria-selected="false">Contact</a>
+            </li>
+        </ul>
+      </div>
+    
+
+    </nav>
+  </div>
+
 
 
   <!-- Main Body -->
 
   <div class="tab-content" id="main">
     <!-- The first part -->
-    <section class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <section class="tab-pane active animated fadeInLeft" id="profile" role="tabpanel" aria-labelledby="profile-tab">
       <div class="container">
         <div id="pf-page">
           <div id="top">
@@ -71,14 +78,16 @@
                 <div class="col-md-8">
                   <div id="personal-info">
                     <div class="title-box">
-                      <h1>Harry Hu</h1>
+                      <h1 class="animated bounce">Harry Hu</h1>
                       <div class="owl-carousel text-rotation">
                         <div class="item">
-                          <div class="sp-subtitle">Full-Stack Web Developer</div>
+                          <div class="subtitle">
+                            <h4>Full-Stack Web Developer</h4>
+                          </div>
                         </div>
-                        <div class="item">
+                        <!-- <div class="item">
                           <div class="sp-subtitle">Frontend-developer</div>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                     <div class="social-box">
@@ -99,8 +108,7 @@
                 <div class="about-me">
                   <h4>About <span>Me</span></h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ut omnis veritatis dignissimos
-                    optio incidunt hic cumque illum exercitationem amet libero doloremque, ipsum minima, nesciunt
-                    similique reiciendis? Cumque, quibusdam praesentium!</p>
+                    optio incidunt hic cumque illum exercitationem amet libero doloremque!</p>
                 </div>
               </div>
               <div class="col-md-6">
@@ -109,7 +117,7 @@
                     <li><span class="title">Age</span><span class="value">25</span></li>
                     <li><span class="title">Residence</span><span class="value">Australia</span></li>
                     <li><span class="title">Address</span><span class="value">Belgrave Road</span></li>
-                    <li><span class="title">e-mail</span><span class="value">hoozh1123@gmail.com</span></li>
+                    <li><span class="title">e-mail</span><span class="value"><a href="mailto:hoozh1123@gmail.com?Subject=Hello%20again">hoozh1123@gmail.com</a></span></li>
                     <li><span class="title">Phone</span><span class="value">040668615</span></li>
                   </ul>
                 </div>
@@ -122,7 +130,7 @@
     </section>
 
     <!-- The Resume Part -->
-    <section class="tab-pane fade" id="resume" role="tabpanel" aria-labelledby="resume-tab">
+    <section class="tab-pane animated fadeInLeft" id="resume" role="tabpanel" aria-labelledby="resume-tab">
       <div class="container">
         <div class="page-container resume">
           <div class="resume-top">
@@ -289,7 +297,7 @@
     </section>
 
     <!-- The Services Part -->
-    <section class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
+    <section class="tab-pane animated fadeInLeft" id="services" role="tabpanel" aria-labelledby="services-tab">
       <div class="container">
         <div class="page-container services-part">
           <div class="services-top">
@@ -394,7 +402,7 @@
     </section>
 
     <!-- Blog Section -->
-    <section class="tab-pane fade" id="blog" role="tabpanel" aria-labelledby="blog-tab">
+    <section class="tab-pane animated fadeInLeft" id="blog" role="tabpanel" aria-labelledby="blog-tab">
       <div class="container">
         <div class="page-container blog-page">
           <div class="col-md-12" id="blog-header">
@@ -528,7 +536,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <section class="tab-pane animated fadeInLeft" id="contact" role="tabpanel" aria-labelledby="contact-tab">
       <div class="container">
         <div class="page-container contact">
           <div class="row">
@@ -537,7 +545,7 @@
                     <div class="skill-title">
                         <h4>Get in <span>Touch</span></h4>
                     </div>
-                    <div class="google-map">
+                    <div class="google-map" id="map">
                       map
                     </div>
                     <div class="personal">
@@ -613,6 +621,8 @@
 
   </div>
 
+ 
+
   <!-- All the JavaScript Code needed -->
   <script src="./javascript/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -626,4 +636,9 @@
   <script src="./javascript/owl.carous/owl.carousel.min.js"></script>
   <script src="./javascript/script.js"></script>
 
+  <!-- Goolge Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtdT9zky6ttY1HijkeYnFQTqNlidB3HDU&callback=initMap"></script>
+
+  <!-- Wow -->
+  <script src="./javascript/wow/wow.min.js"></script>
 </html>
